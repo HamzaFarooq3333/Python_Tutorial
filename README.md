@@ -1,23 +1,15 @@
-Modules are part of code which we do not write but we can use them in out program
+Conversion of one datatype into another is called typecasting 
 <br>
-There are 2 types of modules
+If we add  string variables a=1,b=2 we will get 12 instead of 3
 <br>
-1-Built-in module
+If we use tyecasting and convert it into integer then we will get 3
 <br>
-(They are already present in our code they do not need to be imported externally)
+Type casting is of 2 types
 <br>
-2-External module
+1-Explicit conversion
 <br>
-(They are not present in our code they need to be imported externally written by someone else)
+(The programmer himself wants to convert a datatype in to another one)
 <br>
-->Note:
+2- Implicit conversion
 <br>
-1-Modules help us avoid writing the basic part of code for our project 
-<br>
-2-Modules help us to reuse the code
-<br>
-3-Module contain code that have less chance of error because they are tested by many people
-<br>
-4-pip3 is used in lunix and mac for adding module
-<br>
-5-pip is used in windows for adding module
+(The compiler itself converts a datatype into another one)
