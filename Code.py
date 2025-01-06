@@ -1,43 +1,54 @@
-a=int(input("Enter the value of number = "))
+#For loops 
+#Iterating string 
+name="Hamza Farooq"
+
+for i in name:
+    print(i)
+    if(i=="q"):
+        print("This is something special")
 
 
-match a:
-    case 0:
-        print("The number is zero")
-    case 1:
-        print("The number is 1")
-    case 2:
-        print("The number is 2")
-    case _ if(a<10 and a>0):
-        print("The number is less than ten")
-    case _ if(a>10 and a<20):
-        print("The number is less than twenty and greater than ten ")
-    case _ if(a>=20 ) :    
-        print("The number is greater than or equal to twenty")
-    case _:
-        print("The number is less than zero")
-#We have set 3 default cases using if statement but elif and else cannot be used in this case 
 
-a=int(input("Enter the first number = "))
-b=int(input("Enter the second number = "))
+#Iterating lists 
+color=["Green","Red","Yellow","Purple"]
+for colors in color:
+    print(colors)
+    for i in colors:    #Nested for loops
+        print(i)
 
 
-print("Choose one of the following numbers for the action ")
-print("1.Addition")
-print("2.Subtraction")
-print("3.Multiplication")
-print("4.Division")
+for k in range(7):  #k will go from 0 to 6
+    print(k+1)
 
-option=int(input("Enter the command you want to perform = "))
 
-match option:
-    case 1:
-        print("The sum of the two numbers is ", a+b)
-    case 2:
-        print("The difference of the two numbers is ", a-b)
-    case 3:
-        print("The product of the two numbers is ", a*b)
-    case 4:
-        print("The quotient of the two numbers is ", a/b)
-    case _:
-        print("Invalid option")
+for k in range(3,8): #k will go from 3 to 7
+    print(k)
+
+for i in range(2,11,2): #Will print even numbers only
+    print(i)
+
+#While loops
+
+while i<4:
+    print(i)
+    i+=1
+
+print("Done with the loop")
+
+
+i=0
+while i<38:
+    i=int(input("Input the number = "))
+    print(i)
+
+print("Done with loop")
+
+
+#Decrementing while loop
+i=10
+while i>0:
+    print(i)
+    i-=1
+
+print("Done with loop")
+

@@ -1,12 +1,22 @@
-Match case is a new addition in python 3.10 
+Loops are used when we want to repeat an action again and again
 <br>
-Match cases are used instead of if-else statements when we want to give many different ouputs on different inputs
+There are 2 types of loops for loop and while loop
 <br>
-In c++ we have to write break statement after each case because the other case might also match in c++
+We can also use nested while and for loop in python
 <br>
-But in python we don't need to write break statement after each case because python will automatically stop 
-when a case is matched it does not match other statments
+Loops can iterate over a sequence of iterable objects in python like:list ,string ,etc
 <br>
-We can write multiple default cases by using if case else and elif cannot not be used in match cases 
+Indentation refers to adding the relevant number of tabs and spaces at the beginning of lines of code 
 <br>
-
+It indicate a block of code in Python
+<br>
+Range is a function used in loops which works as let i=3,n=6 range(start,stop,step)
+<br>
+We will get the output starting from i and end on n-1
+<br>
+Step tells us that how many further steps we have to go after each iteration .It is like i++ in c++
+<br>
+We tell that how much i will go further is step is 2 then i+=2 and so on like in c++
+<br>
+We use while loop with complex conditions
+<br>
