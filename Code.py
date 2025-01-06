@@ -45,10 +45,22 @@ print("Done with loop")
 
 
 #Decrementing while loop
+#While loop with else statement
 i=10
 while i>0:
     print(i)
     i-=1
+else:
+    print("Done with loop")
 
-print("Done with loop")
 
+
+
+#Emulation of do while loop 
+a=int(input("Enter the number = "))
+print(a)     #This execution happens once 
+while a>12:
+    print(a)
+    a=a-1
+else:
+    print("Number is less than 12")

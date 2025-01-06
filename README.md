@@ -20,3 +20,8 @@ We tell that how much i will go further is step is 2 then i+=2 and so on like in
 <br>
 We use while loop with complex conditions
 <br>
+We can also use else statement with while loop.When the condition in while loop becomes false else statement becomes true
+<br>
+Do-While loop is present in other languages  but it is  not present in python
+<br>
+Do-While loop is like a while loop which is executed once  irrespective that the condition is true or false
