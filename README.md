@@ -1,15 +1,12 @@
-If-else conditions are used when we want to perform different actions for certain inputs
+Match case is a new addition in python 3.10 
 <br>
-We have if ,else ,elif statments for this purpose
+Match cases are used instead of if-else statements when we want to give many different ouputs on different inputs
 <br>
-elif is used when we have more than 2 different outputs for the user input in our program 
+In c++ we have to write break statement after each case because the other case might also match in c++
 <br>
-If one of the statements is satisfied then the other statements after it are not checked 
+But in python we don't need to write break statement after each case because python will automatically stop 
+when a case is matched it does not match other statments
 <br>
-We can use nested if ,else,elif statements in our program
+We can write multiple default cases by using if case else and elif cannot not be used in match cases 
 <br>
-->Note:-
-<br>
-1-Becareful when using nested if ,else ,elif statements because in pyhton you can get error on extra spaces
-<br>
-2-Extra spaces can cause your program to go into another if,else condition instead of the desired one
+

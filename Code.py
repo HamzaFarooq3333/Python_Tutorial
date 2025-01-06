@@ -1,37 +1,43 @@
+a=int(input("Enter the value of number = "))
 
 
-budget=int(input("Enter the budget = "))
-price=int(input("Enter the price of the food item = "))
+match a:
+    case 0:
+        print("The number is zero")
+    case 1:
+        print("The number is 1")
+    case 2:
+        print("The number is 2")
+    case _ if(a<10 and a>0):
+        print("The number is less than ten")
+    case _ if(a>10 and a<20):
+        print("The number is less than twenty and greater than ten ")
+    case _ if(a>=20 ) :    
+        print("The number is greater than or equal to twenty")
+    case _:
+        print("The number is less than zero")
+#We have set 3 default cases using if statement but elif and else cannot be used in this case 
 
-if(budget>price):
-    print("You can buy the food item")
-    print("Enter a number from the given choices ")
-    print("Do you want to buy this item?")
-    print("1-Yes       2-No")
-    a=int(input("Enter option number = "))
-    if(a==1):
-        print("You have bought the food item")
-        print("Balance = ",budget-price)
-    elif(a==2):
-        print("You have not bought the food item")
-    else:
-         print("Invalid option")
-    
-elif(budget==price):
-    print("You can buy the food item if necessary")
-    print("Enter a number from the given choices ")
-    print("Do you want to buy this item?")
-    print("1-Yes       2-No")
-    a=input("Enter option number = ")
-    if(a==1):
-        print("You have bought the food item")
-        print("Balance = ",budget-price)
-    elif(a==2):
-        print("You have not bought the food item")
-    else:
-         print("Invalid option")
-else:
-    print("You cannot buy the food item")
+a=int(input("Enter the first number = "))
+b=int(input("Enter the second number = "))
 
 
+print("Choose one of the following numbers for the action ")
+print("1.Addition")
+print("2.Subtraction")
+print("3.Multiplication")
+print("4.Division")
 
+option=int(input("Enter the command you want to perform = "))
+
+match option:
+    case 1:
+        print("The sum of the two numbers is ", a+b)
+    case 2:
+        print("The difference of the two numbers is ", a-b)
+    case 3:
+        print("The product of the two numbers is ", a*b)
+    case 4:
+        print("The quotient of the two numbers is ", a/b)
+    case _:
+        print("Invalid option")
