@@ -1,66 +1,36 @@
-#For loops 
-#Iterating string 
-name="Hamza Farooq"
 
-for i in name:
-    print(i)
-    if(i=="q"):
-        print("This is something special")
-
-
-
-#Iterating lists 
-color=["Green","Red","Yellow","Purple"]
-for colors in color:
-    print(colors)
-    for i in colors:    #Nested for loops
-        print(i)
+#Break Statement
+for i  in range(14):
+    if(i==10):
+        print("Exited the loop ")
+        break
+    print("5 x ",i+1 ," = ",(i+1)*5)
+  
 
 
-for k in range(7):  #k will go from 0 to 6
-    print(k+1)
+#Continue Statement
+for i in range(12):
+    if(i==10):
+        print("skipped the iteration ")
+        continue
+    print("5 x ",i+1 ," = ",(i+1)*5)
 
 
-for k in range(3,8): #k will go from 3 to 7
-    print(k)
-
-for i in range(2,11,2): #Will print even numbers only
-    print(i)
-
-#While loops
-
-while i<4:
-    print(i)
-    i+=1
-
-print("Done with the loop")
-
-
+#Do_While loop
 i=0
-while i<38:
-    i=int(input("Input the number = "))
+while True:
     print(i)
-
-print("Done with loop")
-
-
-#Decrementing while loop
-#While loop with else statement
-i=10
-while i>0:
-    print(i)
-    i-=1
-else:
-    print("Done with loop")
+    i=i+1
+    if(i%100==0):         #Emulation of Do-While loop
+     break
 
 
 
+a=int(input("Enter  a number = "))
 
-#Emulation of do while loop 
-a=int(input("Enter the number = "))
-print(a)     #This execution happens once 
-while a>12:
+while True:
     print(a)
-    a=a-1
-else:
-    print("Number is less than 12")
+    a=a+1
+    if(a<1):
+        print("Number less than 0")
+        break
