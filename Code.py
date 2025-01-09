@@ -1,150 +1,81 @@
-#List
-marks=[3,5,6,"Hamza",True,7,2,1,8]
-print(marks)
-print(type(marks))
-print(marks[0])
-print(marks[2])
-print(marks[-3])  #Negative  indexing  same as the one below 
-print(marks[len(marks)-3])
+#Tuples
+tup=(1,4,6,8,"Ali",True)
+print(type(tup))
+print(tup)
 
 
-#Searching for an element in lsit
+#Tuple with a single item without a comma is considered an integer 
+t=(1)
+print(type(t))
 
-if 6 in marks:    
-    print("yes")
+#While using a single item in tuple a comma is needed in order to make it a tuple instead of an integer 
+t=(1,)
+print(type(t))
+
+#Changing in tuple is not allowed 
+#tup[0]=10
+print(tup)  #This will give an error because tuples are immutable in Python
+
+
+#Indexing in tuple
+print(tup[0])  #This will print 1
+print(tup[5])  #This will print True
+print(tup[-2])  #Negative indexing
+
+
+
+
+
+#Slicing in tuple
+print(tup[1:4])  
+print(tup[:])
+print(tup[1:]) 
+print(tup[:4]) 
+print(tup[1:5:2])
+
+
+
+#Searching for item
+if 324 in tup:
+    print("Item found")
 else:
- print("no")
+ print("Item not found")
 
+ #Searching for item with index
+ print(tup.index(8))
 
-if "6" in marks:   #If we search 6 as a string we will get no because 6 is as an integer in our list not as a string
-    print("yes")
-else:
- print("no")
-
-
-#Same searching  applies in strings as well 
-
-if "am" in "Hamza":
-   print("yes")
-else:
-   print("no")
-
-if "az" in "Hamza":
-   print("yes")
-else:
-   print("no")
-
-
-#Printing all elements of list
-print(marks)
-print(marks[:])
-
-#Printing using inndexing
-print(marks[1:3])
-print(marks[3:-2])
-print(marks[1:6:2]) #This expression can also be written as marks[Start:End:Steps]
+ #Methods of tuples
+ #For making changes in a tuple 
+ #We need to convert it into a list first and then make the changes
+ countries=("Pakistan","Germany","Japan","China")
+ temp=list(countries)
+ temp[0]="USA"
+ temp.pop()
+ temp.append("Korea")
+ countries=tuple(temp)
+ print(countries)
 
 
 
-#List comprehension 
-lst=[i for i in range(5)]
-print(lst)
-
-lst=[i for i in range(10) if(i%2==0)]
-print(lst)
-
-
-#List Methods
-#append() method adds an element at the end of the list
-lst=[3,1,6,2,8]
-print(lst)
-lst.append(7)
-print(lst)
+ #Concatinaion  of 2 tuples to make a new tuple
+ tup1=(1,2,3)
+ tup2=(4,5,6)
+ tup3=tup1+tup2
+ print(tup3)
 
 
-
-#sort() method sorts the list in ascending order
-lst.sort()
-print(lst)
-
+ #Count method tells the total number of occurances of an element in a tuple
+ tup=(1,2,2,3,4,4,4,5,6)
+ print(tup.count(4))
 
 
-#sort() method with reverse= true sorts the list in ascending order
-lst.sort(reverse=True)
-print(lst)
+ #Index tells the first occurance of the element in the tuple and give value error if element is not present
+ tup=(1,2,2,3,4,4,4,5,6)
+ print(tup.index(4))
 
 
-
-#reverse() method reverses the list
-lst.reverse()
-print(lst)
-
-
-
-
-#returns the index of the first occurrence of the element
-print(lst.index(2))
-
-
-
-#Tells the number of occurances of a number in a list 
-lst.count(2)
-print(lst.count(2))
-
-
-
-
-#removes the first occurrence of the element
-lst.remove(2)
-print(lst)
-
-
-
-
-#removes the last occurrence of the element
-lst.pop()
-print(lst)
-
-
-
-#This method directly changes the content in the list because m acts as a pointer towards the list l 
-# any changes in m will directly affect l so we should use copy function instead of doing this 
-l=[2,4,6,2,8]
-m=l
-m[0]=0
-print(l)
-
-#Copy function copies the content of one list into another list 
-m=l.copy()
-m.append(3)
-m[0]=0
-print(l)
-print(m)
-
-
-#Insert function inserts an element at a specific index in a list 
-l.insert(1,23)   #insert(index,element)
-print(l)
-
-
-#Extend takes a list and appends it at the end to the other list 
-m=[900,1000,1100]
-l.extend(m)
-print(l)  #l chnages in this 
-
-
-
-#Concatinate 2 lists 
-l=[1,2,3]
-m=[4,5,6]
-k=l+m
-print(l)  #We get  a new list in this case and l does not change 
-print(k)
-
-
-
-
-
+#tup.index(Element_to_search,starting_index,ending_index)
+print(tup.index(5,4,8))  #The method finds the first occurance of the element while slicing the tuple
 
 
 
