@@ -1,11 +1,5 @@
-Tuples are oredered collection of data items.They can store multiple items in a single variable.Tuples are seperated by comma and enclosed in round brackets.They are unchangeable meaning they cannot be changed after creation
+F-string is a method that helps us conviniently place variables in a string.It is used in string formating 
 <br>
-When we use the methods of tuples we get a new tuple the original tuple does not change
+f-string is introduced in python 3.6 and onward.Its type is also a string
 <br>
-Lists are changeable while tuple and strings are unchangeable 
-<br>
-If we want to change a tuple then we have to convert the tuple in a list then we make changes in the list and then again convert it into a tuple 
-<br>
-We can use all the methods in the list in tuples after firstly converting it into list and then back into tuple
-<br>
-We can use index method in tuple along with slicing 
+We use double curly brackets in order to avoid the f-string from populating the values of the variable 
