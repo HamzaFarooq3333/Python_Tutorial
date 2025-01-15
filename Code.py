@@ -1,117 +1,179 @@
-#Sets
-s={2,4,2,5,8,10,2,4,9}
-print(s)
+#Dictionary 
+
+info={
+  "Name":"Hamza Farooq",
+  "Age":20,
+  "City":"Lahore",
+  "Country":"Pakistan"
+
+}
+
+#Accessing single value
+#We can acces the name which is Hamza Farooq using the key name  
+print(info["Name"])   #This will throw error in case the key is not present
+print(info.get("Name"))  #This will print none in case the key is not present
+print('\n')
 
 
 
-#Set does not guarantee order 
-info={"Carla",19 ,False,19.34}
-print(info)
+#Acessing multiple values
+#We can access multiple values using the .items() method which returns a list of tuples
+for key, value in info.items():
+    print(f" The value corresponding to the key  {key}  is : {value}")  #This will print all the key value pairs
+
+print('\n')
+
+#Priting the key value pairs
+print(info.items())
+
+print('\n')
+for key,value in info.items():
+   print(f" The value corresponding to the key  {key}  is : {value}")  #This will print all the key value pairs
 
 
-a=set()  #Empty set otherwise in case of a={}  it is a dictionary 
-print(type(a))
-
-#Accessing items using for loop 
-for i in info:
-    print(i)
+print('\n')
 
 
-#Set Methods
-
-#Joining sets 
-# Union and update 
-
-s1={1,2,3,4}
-s2={5,6,7,8}
-print(s1.union(s2))  #Union returns a new set not changing the original set 
-print("Original s1 before union update :",s1)
-s1.update(s2)  #Update changes the original set 
-print("Updated s1 after union update :",s1)
+#Creating empty dictionary 
+#We can create an empty dictionary using the {} syntax
+empty_dict={}  #This is an empty dictionary
+print("Printing empty dictionary : ",empty_dict)
+print('\n')
 
 
-#Intersection and Intersection update 
-print(s.intersection(s1))
-print("original s before intersection update :",s)
-s.intersection_update(s1)  #It will update the s set with the vlaues that are common  in s and s1 and the other 
-#values will be removed from s
-print("Updated s after intersection update :",s)
+
+#Dictionary Methods
+#1-Update (Used to update the items in the dictionary)
+ep1={122:45,123:89,145:67,324:76}
+ep2={666:32,324:36,124:46}
+print("ep1 before update : ",ep1)
+ep1.update(ep2)
+print("ep1 after update : ",ep1)
+print('\n')
 
 
-#Symmetric difference and Symmetric difference update
-#  (A unin B)-(A intersection B)
 
-print(s.symmetric_difference(s1))
-print("Original s before symmetric difference update :",s)
-s.symmetric_difference_update(s1)
-print("Updated s after symmetric difference update :",s)
-
-
-#Difference and Difference Update 
-# A-B
-#Prints elements present in A and not in B
-print(s.difference(s2))
-print("Original s before s update :",s)
-s.difference(s2)
-print("Updated  s after difference update :",s)
+#2-Clear (Removes all the items from the dictionary)
+ep1.clear()
+print("ep1 after clearing : ",ep1)
+ep1={122:45,123:89,145:67,324:76}
+print('\n')
 
 
-#Isdisjoint 
-# Checks if the items of first  set is present in the other set 
-print("Is s disjoint of s1 :",s.isdisjoint(s1))
+
+#3-Pop (Removes the required key value pair from the dictionary )
+print('\n')
+print('ep2 before using pop function ',ep2)
+ep2.pop(324)
+print('ep2 after using pop to remove key value pair with key 324',ep2)
+print('\n')
 
 
-#Issuperset
-#Are all the elements in the second set already present in the first set 
-print("Are elemets in s2 present in s :",s.issuperset(s2))
 
 
-#Issubset
-#Are all the elements in the first set also  present in the second set 
-print("Is s sebset  of s1 :",s.issubset(s1))
+
+#4-PopItem (Removes the last key value pair from the dictionary)
+print('\n')
+print('ep1 before using popitem ', ep1)
+ep1.popitem()
+print('ep1 after using popitem to delete the last key value pair',ep1)
+print('\n')
 
 
-# Add (It adds a single item in the set )
-print("Original s before adding :",s)
-s.add(23)
-print("Updated s after adding 23 :",s)
-
-#Update (Adds multiple items in the set basically adds the second set in the first set )
-print("Original s1 before updating it with s2 :",s1)
-s1.update(s2)
-print("Updated s1 after adding s2 :",s1)
-
-#Remove (Removes item from set if the item is not present it will raise error)
-print("s1 before removing 4 :",s1)
-s1.remove(4)
-print("s1 after removing 4 :",s1)
-
-#Discard (Removes item from the set if the item is not present it will not raise error)
-print("s1 before discarding  6 :",s1)
-s1.discard(6)
-print("s1 after discarding 6 :",s1)
 
 
-#Pop (Removes the last item from the set but we do not know what the last item is because they are random in set)
+#5-del (Deletes the dictionary )
+print('\n')
+print('Before deleting key in ep1',ep1)
+del ep1[123]  #Write the key as an integer you will get error if you write it as a string 
+print('Deleting key value pair having key 123 using del keyword',ep1)
+del ep1  #Del keyword will delete the entire doctionary if the key value is  not given 
+print("deleted ep1 using del keyword")
+print('\n')
 
-print("s2 before poping :",s2)
-item=s2.pop()
-print("s2 after poping :",s2)
-print("Item poped :",item)
 
 
-#del (Deletes an entire set)
-del s 
-#print(s)    will get error because s does not exit anymore
 
-#clear (Deletes all the items in the set )
-print("s1 before clearing :",s1)
-s1.clear()
-print("s1 after clearing :",s1)
+#6-Copy (Copies the keys and values of a dctionary and places it in another dictionary)
+print('\n')
+a={2:32,3:45,4:54}
+b={7:32}
+b=a.copy()
+print("a : ",a)
+print("b : ",b)
+print('\n')
 
-#If-else statements
-info={"Hamza",20,True,33}
-if "Hamza" in info:
-    print("Present")
-else:
-    print("Not present")
+
+
+
+#7-Set Default (Adds  a key in the dictionary without a value)
+print('\n')
+a.setdefault(9)
+print(a)
+print('\n')
+
+
+
+
+#8-FromKey    (Returns a new dictionary with the specified keys and values.
+# You will get a new dictionary having all the keys in the input dictionary having the same input value)
+print('Printing b using fromkeys : ',a.fromkeys(b,53))
+print('\n')
+
+
+
+
+#9-Values (Returns all the values of the dictionary )
+print("Printing values of a : ",a.values())
+print('\n')
+
+
+
+
+
+
+#10-Keys  (Returns all the keys of the dictionary)
+print("Printing keys of a : ",a.keys())
+print('\n')
+
+
+
+#11-Items (Returns all the items(key-value pair) in the dictionary)
+print("Printing items in a",a.items())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
