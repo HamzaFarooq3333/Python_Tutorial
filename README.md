@@ -1,6 +1,6 @@
 Dictionaries are ordered collection of data items.They store multiple values in a single variable.Dictionary items are key values-pair they are seperated by comma and enclosed in curly brackets.
 <br>
-The values in a dictionary can be excessed using keys which hold the specific value 
+The values in a dictionary can be excessed using keys which hold the specific value.
 <br>
 The use is to create a mapping somewhat similar to  hashmaps that  are used in c++.
 <br>
