@@ -2,7 +2,7 @@ Conversion of one datatype into another is called typecasting
 <br>
 If we add  string variables a=1,b=2 we will get 12 instead of 3
 <br>
-If we use tyecasting and convert it into integer then we will get 3
+If we use tyecasting and convert it into integer then we will get 3.
 <br>
 Type casting is of 2 types
 <br>
