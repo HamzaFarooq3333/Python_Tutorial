@@ -8,4 +8,4 @@ If we want to change a tuple then we have to convert the tuple in a list then we
 <br>
 We can use all the methods in the list in tuples after firstly converting it into list and then back into tuple
 <br>
-We can use index method in tuple along with slicing 
+We can use index method in tuple along with slicing.
