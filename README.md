@@ -12,4 +12,4 @@ We can use nested if ,else,elif statements in our program
 <br>
 1-Becareful when using nested if ,else ,elif statements because in pyhton you can get error on extra spaces
 <br>
-2-Extra spaces can cause your program to go into another if,else condition instead of the desired one
+2-Extra spaces can cause your program to go into another if,else condition instead of the desired one.
