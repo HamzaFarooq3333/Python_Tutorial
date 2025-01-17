@@ -8,6 +8,6 @@ Changing comment does not change the output of the program but changing doc-stri
 <br>
 Pep 8 (Python Enhancement Proposal) .It contains a document that tells us that how we can write a good and maintainable python code 
 <br>
-Write import this in command prompt after writing python in case of windows 
+Write import this in command prompt after writing python in case of windows. 
 <br>
 It gives a poem that helps the programmer realize the mistakes and improve their big projects in python 
