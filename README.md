@@ -8,7 +8,7 @@ We can access any item in list using index but it should be within the range of 
 <br>
 We can search for an element in a list but the datatpe of the element should be the same as the datatype of that element present in the list
 <br>
-We can print elemets in a list using indexing like  in a string 
+We can print elemets in a list using indexing like  in a string.
 <br>
 List comprehension is used for creating new lists from other iterateables like  lists,tuples,dictionaries,sets and even array and strings
 <br>
