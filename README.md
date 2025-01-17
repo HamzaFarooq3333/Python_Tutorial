@@ -4,7 +4,7 @@ Sets are unchangeable.We cannot change them when they are once created
 <br>
 Items in sets occur in random order and thus cannot be accessed using indexing 
 <br>
-We use for loop for accessing the items in the set in a random order 
+We use for loop for accessing the items in the set in a random order.
 <br>
 There many methods for set like:
 <br>
