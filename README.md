@@ -21,5 +21,5 @@ We can use the len() function to get the length of the string
 <br>
 3-Begin should be smaller then end if you want to print something within range
 <br>
-4- Fruit[1:4] in this case the characters printed will start from 1 but will not include 4 in them
+4- Fruit[1:4] in this case the characters printed will start from 1 but will not include 4 in them.
 <br>
