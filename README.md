@@ -4,7 +4,7 @@ We can use that code many times without writing the same code we just call that 
 <br>
 It is very useful because if there is a mistake in the code we do not need to fix that mistake at every place we used that code
 <br> 
-We just need to fix the code in the function once 
+We just need to fix the code in the function once.
 <br>
 It helps reuse the code without copy pasting it again and again when needed
 <br>
