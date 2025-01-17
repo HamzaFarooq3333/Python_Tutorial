@@ -6,4 +6,4 @@ We can implement a do-while loop using the break statement in our while loop
 <br>
 1-Break statement terminates  the complete loop
 <br>
-2-Continue statement skips the current iteration of the loop and continues with the next iteration
+2-Continue statement skips the current iteration of the loop and continues with the next iteration.
