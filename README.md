@@ -4,4 +4,4 @@ This function gives the value as a string/character which we have to pass into a
 <br>
 Input function returns value in a string thus we have to typecast it 
 <br>
-If we sum the input numbers then they will be added as string instead  of numbers
+If we sum the input numbers then they will be added as string instead  of numbers.
