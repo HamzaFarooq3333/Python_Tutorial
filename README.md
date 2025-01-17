@@ -18,6 +18,6 @@ There are 2 types of modules
 <br>
 3-Module contain code that have less chance of error because they are tested by many people
 <br>
-4-pip3 is used in lunix and mac for adding module
+4-pip3 is used in lunix and mac for adding module.
 <br>
-5-pip is used in windows for adding module
+5-pip is used in windows for adding module.
