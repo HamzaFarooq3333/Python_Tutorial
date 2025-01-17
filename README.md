@@ -36,4 +36,4 @@ The else condition being executed means that the loop is finished and it did not
 <br>
 ->The else condition is not executed when the loop is terminated using return statement
 <br>
-->We can use all if,else,elif conditions in for and while loop
+->We can use all if,else,elif conditions in for and while loop.
