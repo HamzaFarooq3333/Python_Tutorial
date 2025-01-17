@@ -64,3 +64,94 @@ while a>12:
     a=a-1
 else:
     print("Number is less than 12")
+
+
+print('\n')
+#For loop using else condition 
+for i in range(5):
+    print(i)
+else:
+ print("Loop is done")
+
+
+print('\n')
+for i in []:
+    print(i)
+else:
+    print('no i ')
+
+
+print('\n')
+for i in range(6):
+    print(i)
+    if(i==4):
+        break
+else:    #Else is not executed because the loop was broken before the last iteration was printed 
+    print("No i")
+
+
+
+print('\n')
+i=0
+while i<7:
+    print(i)
+    i=i+1
+    if(i==4):
+        break
+else:    #Else is not executed because the loop was broken before the last iteration was printed
+    print("Else block in loop ")
+print('Out of loop')
+
+print('\n')
+
+
+for i in range(5):
+    print('Iteration no {} in for loop'.format(i+1))
+    if(i==3):
+        break
+    else:
+        print('Else block in for loop')
+print('out of loop')
+
+
+
+
+print('\n')
+print("-> For loop using if,elif ,else ")
+
+
+for i in range(5):
+    print('Iteration no {} in for loop'.format(i+1))
+    if(i==3):
+        break
+    elif(i<2):
+        print('Elif 1 block in for loop')
+    elif(i<3):
+        print('Elif 2 block in for loop')
+    if(i<3):
+        print('If  2 block in for loop')
+    else:
+        print('Else block in for loop')
+
+
+
+
+print('\n')
+print("-> While loop using if,elif ,else ")
+
+i=0
+while i<7:
+    print('Iteration no {} in while loop'.format(i+1))
+    i=i+1
+    if(i==5):
+        break
+    elif(i<2):
+        print('Elif 1 block in while loop')
+    elif(i<3):
+      print('Elif 2 block in while loop')
+    if(i<3):
+          print('If  2 block in while loop')
+    else:
+         print('Else block in while loop')
+
+    

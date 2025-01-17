@@ -25,3 +25,15 @@ We can also use else statement with while loop.When the condition in while loop 
 Do-While loop is present in other languages  but it is  not present in python
 <br>
 Do-While loop is like a while loop which is executed once  irrespective that the condition is true or false
+<br>
+We can also use else condition using for loop
+<br>
+The else condition being executed means that the loop is finished and it did not break before finishing 
+<br>
+-->Note:-
+<br>
+->The else condition is not executed when the loop breaks using break statement
+<br>
+->The else condition is not executed when the loop is terminated using return statement
+<br>
+->We can use all if,else,elif conditions in for and while loop
