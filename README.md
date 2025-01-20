@@ -1,9 +1,8 @@
-Exception handling is a process of handling the runtime errors or exceptions that occur during the execution of a program
+The finally block code is a part of exception handling.When we handle exceptions using try and except block we can include finally block at the end
 <br>
-Exception handling is responding to unexpected and unwanted events when our computer program runs.Exception handling deals with these program or events to avoid the program from crashing and without this process the exceptions would disrupt the normal operation of a program
+The code in finally is always executed irrespective that we got an error in our code  or not .
 <br>
-We use try ,except  for error handling  
+The execution of code inside finally clause is different from the same code written outside the exception loop
 <br>
-This keeps our program to continue the other lines of code despite the exception occuring  in the above code 
+It is most prominent in a function.We can use it to open,close or shift to another database connection after the execution of our code in the function 
 <br>
-We can also handle a specific type of error like value error ,server data error
