@@ -1,66 +1,27 @@
 
-try:
- a=[32,6,2,7,1,9]
- i=int(input("Enter the index for the list = "))
- print(a[i])
-except IndexError:
- print("Index out of range")
-finally:
- print("Program ended")
+
+a=300
+b=3005
+
+#Short hand if-else 
+print('A') if a>b else  print('=') if a==b else print("B")
+
+print('\n')
+
+#We can make a new variable by using conditions on the previous result output 
+#The syntax is      Result = value_if_true  if condition else value_if_false
+
+c=4 if a>b else 7
+print('Printing value of C determined by value of a and b : ',c)
 
 
 
 
+print('\n')
+def fun1(a):
+    return a*a
 
+def fun2(a):
+    return a+a
 
-try:
- a=[32,6,2,7,1,9]
- i=int(input("Enter the index for the list = "))
- print(a[i])
-except IndexError:
- print("Index out of range")
-
-print("Program ended ")
-
-
-
-
-
-
-#In this case when finally keyword is not used then the line of code in the function after the return statement is
-# not executed becasue the function has returned the value back 
-def func():
- 
- try:
-  a=[32,6,2,7,1,9]
-  i=int(input("Enter the index for the list = "))
-  print(a[i])
-  return 1
- except IndexError:
-  print("Index out of range")
-  return 0
- print("Program ended")
-
-
-x=func()
-print(x)
-
-
-
-#In this case while using finally keyword the function executes the code within finally before returning 
-def func():
- 
- try:
-  a=[32,6,2,7,1,9]
-  i=int(input("Enter the index for the list = "))
-  print(a[i])
-  return 1
- except IndexError:
-  print("Index out of range")
-  return 0
- finally:
-  print("Program ended")
-
-
-x=func()
-print(x)
+print("A") if a>b else print(fun1(a)) if a==b else print(fun2(a)) 

@@ -1,8 +1,11 @@
-The finally block code is a part of exception handling.When we handle exceptions using try and except block we can include finally block at the end
+Short hand if-else is a convinient way to write simple if-else statements especially when you want to assign value to a variable based on a condition.It is not good for complex logic statments use simple if-else in that case.
 <br>
-The code in finally is always executed irrespective that we got an error in our code  or not .
+Short hand if else statement are basically if-else conditions executed in a short method in our code 
 <br>
-The execution of code inside finally clause is different from the same code written outside the exception loop
+This helps us in writing simple and clear code
 <br>
-It is most prominent in a function.We can use it to open,close or shift to another database connection after the execution of our code in the function 
+It can also be used to assign different values to a variable based on the output from the previuos result.
 <br>
+        Result = value_if_true  if condition else value_if_false
+<br>
+Elif cannot be used in the same way in a short method like short hand if-else.
