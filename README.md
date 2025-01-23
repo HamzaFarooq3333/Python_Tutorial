@@ -13,8 +13,8 @@ myenv/bin/activate (linux/mac)
 myenv\Scripts\activate.ps1 (Power Shell)
 <br>
 --> Deactivating the virtual environment
+<br>
 deactivate
-
 <br>
 2-Requirement.txt:-
 <br>
