@@ -3,9 +3,11 @@ A virtual environment is a tool used to isolate specific python environments in 
 This is specially useful when working on projects that have collective pakage version or pakages that are not compatible with each other
 <br>
 --> Creating a virtual environment
+<br>
 python -m venv  myenv(folder_name)
 <br>
 --> Activating the virtual environment
+<br>
 myenv\Scripts\activate.bat  (windows)
 <br>
 myenv/bin/activate (linux/mac)
