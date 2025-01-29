@@ -1,41 +1,9 @@
-A virtual environment is a tool used to isolate specific python environments in a single machine,allowing you to work on multiple projects with different dependecies and pakages without conflict
+Importing in python is a process of loading a python module in the current script.It allows you to use the functions
+defined in that module in your current script 
 <br>
-This is specially useful when working on projects that have collective pakage version or pakages that are not compatible with each other
+You can make all the functions and variables from a module public by using  ' * '   (from math import *)
 <br>
---> Creating a virtual environment
+The dir function allows you to view all the functions and variables in a module
 <br>
-python -m venv  myenv(folder_name)
-<br>
---> Activating the virtual environment
-<br>
-myenv\Scripts\activate.bat  (windows)
-<br>
-myenv/bin/activate (linux/mac)
-<br>
-myenv\Scripts\activate.ps1 (Power Shell)
-<br>
---> Deactivating the virtual environment
-<br>
-deactivate
-<br>
-2-Requirement.txt:-
-<br>
-It is useful to have a requirement text file that contains all names and versions of all the pakages the project depends upon .This file can be used to install all the required pakages in a new environment
-<br>
-You can create this text file and automatically export the pakages and its versions in this text file and your friend can also automatically import and install all these pakages in another virtual environement.
-<br>
---> Creating a requirement.txt file
-<br>
-pip freeze > requirement.txt
-<br>
---> Installing pakages from the requirement.txt file
-<br>
-pip install -r requirement.txt
-<br>
---->Note:-
-<br>
-1-The basic use for this is for creating our own seperate environment in python in which we want to use different pakages that may cause a conflict with  other pakages
-<br>
-2-We can also use this to share our project with other developers and they can easily install all
-pakages required for the project by just running the command pip install -r requirement.txt
+We can also use the functions from other python files in our program by importing them
 <br>
